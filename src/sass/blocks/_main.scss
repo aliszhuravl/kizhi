@@ -1,0 +1,114 @@
+.page_main__item {
+  width: 100%;
+  background-color: #fff;
+  padding: 0;
+  margin-bottom: 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  .page__inner {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+      .left {
+        margin-top: -80px;
+        width: 58%;
+        background-color: #fff;
+        display: flex;
+        &__inner {
+          width: 700px;
+          margin: 0 0 0 auto;
+            .left_content {
+              padding-top: 80px;
+              padding-right: 120px;
+              position: relative;
+              max-height: 350px;
+              height: 350px;
+              padding-left: 20px;
+                &:after {
+                  content: '';
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  background-image: url('../img/orn.png');
+                  background-repeat: no-repeat;
+                  -webkit-background-size: cover;
+                  background-size: cover;
+                  width: 40px;
+                  height: 100%;
+                }
+            }
+        }
+      }
+      .right {
+        width: 42%;
+        background-color: #f3f3f3;
+        &__inner {
+          width: 470px;
+          align-self: flex-end;
+          margin: 0  auto 0 0;
+          .right_content {
+            width: 100%;
+            padding-top: 80px;
+            padding-left: 60px;
+            margin-bottom: 80px;
+              .ico_text {
+                margin-left: 5px;
+              }
+          }
+        }
+      }
+  }
+}
+
+.name {
+  font-size: 20px;
+  font-family: $font-family_bold;
+  margin-bottom: 20px;
+}
+
+.ico_text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 10px;
+    .ico {
+      margin-right: 20px;
+    }
+    .ico_p {
+      opacity: 0.5;
+      font-size: 14px;
+    }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.all-wide {
+  max-width: 1440px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  //background: linear-gradient(90deg, #fff, $color-gray-5);
+  width: 100%;
+    &:after {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      content: '';
+      right: 0;
+      width: 42%;
+      height: 100%;
+      background: linear-gradient(0deg, #fff, $color-gray-5);
+    }
+    .page__item {
+      position: relative;
+      z-index: 2;
+      max-width: 1170px;
+      margin: 0 auto;
+    }
+}

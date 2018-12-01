@@ -1,0 +1,77 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: $color-white;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 16px/1.5 $font-family;
+  font-weight: normal;
+  font-style: normal;
+  color: $font-color_dark;
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-family: $font-family_bold;
+  color: $color-red;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-family: $font-family_bold;
+  color: $color-red;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+h3 {
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-size: 24px;
+  font-family: $font-family_bold;
+  font-weight: normal;
+  color: $color-red;
+}
+
+.bold {
+  font-family: $font-family_bold;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.red {
+  color: $color-red;
+}
+
+.red_bold {
+  color: $color-red;
+  font-family: $font-family_bold;
+}
+
+.main_p {
+  color: #181818;
+  font-size: 19px;
+}

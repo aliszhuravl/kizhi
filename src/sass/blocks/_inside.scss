@@ -1,0 +1,186 @@
+.page_inside {
+  background: linear-gradient(0deg, #fff, $color-gray-5);
+}
+
+.box {
+  padding-top: 80px;
+  &_header {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+  }
+  &_breadcrumbs {
+    margin-bottom: 50px;
+    .breadcrumbs_list {
+      display: flex;
+      font-size: 16px;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li span {
+        margin: 0 4px;
+      }
+    }
+  }
+  &_searchform {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+      &__item {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+          p {
+            margin-right: 25px;
+          }
+      }
+  }
+  &_filter {
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #bebebe;
+    line-height: 24px;
+      a {
+        font-size: 24px;
+        text-decoration: none;
+        color: #777777;
+        font-family: $font-family_bold;
+        margin: 0 15px;
+        transition: all 0.3s ease-in-out;
+        border-bottom: 2px dashed transparent;
+          &:first-child {
+            margin-left: 0;
+          }
+          &:hover {
+            border-bottom: 2px dashed #777777;
+          }
+      }
+      .active {
+        color: $color-red;
+        border-bottom: 2px dashed $color-red;
+        &:hover {
+          border-bottom: 2px dashed $color-red;
+        }
+      }
+  }
+  &_body {
+    width: 100%;
+  }
+}
+
+.gallery_tile {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+    &__item {
+      width: calc(33.333% - 22px);
+      margin-right: 32px;
+      border: 1px dashed $color-gray;
+      margin-bottom: 32px;
+      background-color: #fff;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out;
+      color: #000;
+      text-decoration: none;
+       &_img {
+         margin: 13px;
+         overflow: hidden;
+         position: relative;
+          img {
+            transition: all 0.5s ease-in-out;
+          }
+         .ticket {
+           position: absolute;
+           right: 15px;
+           top: 15px;
+           background-color:$color-red;
+           border-radius: 50%;
+           width: 60px;
+           height: 60px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           opacity: 0;
+           z-index: 8;
+           transition: all 0.3s ease-in-out;
+         }
+        }
+       &_text {
+          padding: 17px 30px 30px 30px;
+            .title {
+              font-family: $font-family_bold;
+              margin-bottom: 25px;
+              font-size: 20px;
+              line-height: 1.2;
+            }
+         .desc {
+           .ico_text {
+             margin-bottom: 5px;
+              .ico {
+                margin-right: 15px;
+              }
+           }
+         }
+        }
+       &:nth-child(3n+3) {
+         margin-right: 0;
+       }
+      &:after {
+        transition: all 0.3s;
+        position: absolute;
+        right: -40px;
+        bottom: -10px;
+        z-index: 2;
+        width: 10px;
+        height: 10px;
+        border: 10px solid transparent;
+        border-bottom: 10px solid $color-red;
+        content: '';
+        transform: rotate(135deg)
+      }
+      &:hover {
+        border-color: $color-red;
+        transition: all 0.3s ease-in-out;
+        -webkit-box-shadow: 10px 10px 27px 6px #ebebeb;
+        box-shadow: 10px 10px 27px 3px #ebebeb;
+        .gallery_tile__item_img img {
+          -webkit-transform: scale(1.1);
+          -moz-transform: scale(1.1);
+          -o-transform: scale(1.1);
+          transition: all 1s ease-in-out;
+        }
+          .ticket {
+            opacity: 1;
+            transition: all 0.3s ease-in-out;
+            img {
+              transform: none;
+            }
+          }
+        &:after {
+          position: absolute;
+          transition: all 0.3s;
+          right: -15px;
+          bottom: -15px;
+          z-index: 2;
+          width: 15px;
+          height: 15px;
+          border: 15px solid transparent;
+          border-bottom: 15px solid $color-red;
+          content: '';
+          transform: rotate(135deg)
+        }
+      }
+    }
+}
+
+.show_more {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}

@@ -1,0 +1,13 @@
+//some styles
+
+.progress_bar {
+  width: 500px;
+  background-color: #fff;
+  border: 1px dashed $color-red;
+  height: 50px;
+    .pbi {
+      width: 10%;
+      background-color: $color-red;
+      height: 50px;
+    }
+}

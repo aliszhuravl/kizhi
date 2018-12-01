@@ -1,0 +1,49 @@
+.layout-inner {
+  width: 100%;
+  min-width: 1170px;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+
+  .layout-inner {
+    max-width: 1170px;
+    width: 100%;
+    min-width: 1170px;
+  }
+}
+
+
+@media (min-width: 641px) and (max-width: 1199px) {
+
+  /**
+    * size on tablet
+    */
+
+  .layout-inner {
+    min-width: 1170px;
+    max-width: 1170px;
+    width: 1170px;
+  }
+}
+
+
+//@media (max-width: 640px) {
+//
+//  /**
+//    * size on mobile
+//    */
+//
+//  .layout-inner {
+//    min-width: 320px;
+//    width: 100%;
+//    max-width: 640px;
+//  }
+//
+//  .layout-padding {
+//    padding-left: 0;
+//    padding-right: 0;
+//  }
+//}
