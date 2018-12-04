@@ -5,9 +5,35 @@
 .box {
   padding-top: 80px;
   &_header {
-    display: flex;
     width: 100%;
-    margin-bottom: 0;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      h1 {
+        margin-bottom: 0;
+      }
+      h2 {
+        margin-bottom: 0;
+      }
+  }
+  &_text {
+    margin-bottom: 50px;
+    max-width: 800px;
+    width: 100%;
+    //display: flex;
+    //align-items: flex-start;
+    //justify-content: space-between;
+      &__left {
+        max-width: 540px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+  }
+  .box_announce {
+    width: 100%;
+    max-width: 100%;
   }
   &_breadcrumbs {
     margin-bottom: 50px;
@@ -17,6 +43,17 @@
       list-style-type: none;
       padding: 0;
       margin: 0;
+      li a {
+        color: #000;
+        text-decoration: none;
+        &:hover {
+          color: $color-red;
+        }
+      }
+      li p {
+        color: #000;
+        opacity: 0.4;
+      }
       li span {
         margin: 0 4px;
       }
@@ -66,15 +103,27 @@
   }
   &_body {
     width: 100%;
+    .tabs_container {
+      width: 100%;
+      max-width: 560px;
+    }
   }
+  .box_dual {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.box_second {
+  padding-top: 0;
 }
 
 .gallery_tile {
   width: 100%;
   display: flex;
-  align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 50px;
+  align-items: inherit;
     &__item {
       width: calc(33.333% - 22px);
       margin-right: 32px;
@@ -86,6 +135,9 @@
       transition: all 0.3s ease-in-out;
       color: #000;
       text-decoration: none;
+        &:nth-child(3n+3) {
+          margin-right: 0;
+        }
        &_img {
          margin: 13px;
          overflow: hidden;
@@ -114,7 +166,7 @@
             .title {
               font-family: $font-family_bold;
               margin-bottom: 25px;
-              font-size: 20px;
+              font-size: 19px;
               line-height: 1.2;
             }
          .desc {
@@ -123,6 +175,10 @@
               .ico {
                 margin-right: 15px;
               }
+           }
+           p {
+             opacity: 0.5;
+             font-size: 14px;
            }
          }
         }
@@ -183,4 +239,23 @@
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+}
+
+.page_place {
+  .page_map_box {
+    margin-bottom: 0;
+  }
+}
+
+.block_gray {
+  background-color: $color-gray-5;
+  padding: 40px;
+}
+
+
+
+.info_island {
+  .block_gray {
+    max-width: 470px;
+  }
 }

@@ -75,4 +75,72 @@
     }
 }
 
+.footer_mobile {
+  padding: 20px 0;
+  display: none;
+    .footer__inner {
+      &_bottom {
+        margin-bottom: 20px;
+      }
+      &_accordion {
+        width: 100%;
+        margin-bottom: 40px;
+        .accordion__btn {
+          background-color: transparent;
+          color: #000000;
+          border-bottom: 1px dashed $color-gray;
+            &:before {
+              background-color: #000;
+            }
+          &:after {
+            background-color: #000;
+          }
+        }
+        .accordion__content {
+          padding: 20px 0;
+          background-color: transparent;
+            .info_box {
+              display: flex;
+              flex-wrap: wrap;
+              width: 100%;
+                .ico_text {
+                  align-items: flex-start;
+                    &:last-child {
+                      margin-top: 25px;
+                    }
+                  p {
+                    margin-bottom: 0;
+                  }
+                  .phones {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                      p {
+                        margin-right: 15px;
+                        margin-bottom: 5px;
+                      }
+                  }
+                }
+            }
+          .avards {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+              .control {
+                margin-right: 40px;
+                margin-bottom: 25px;
+                  img {
+                    max-width: 200px;
+                  }
+              }
+              .silver {
+                img {
+                  max-width: 260px;
+                }
+              }
+          }
+        }
+      }
+    }
+}
 

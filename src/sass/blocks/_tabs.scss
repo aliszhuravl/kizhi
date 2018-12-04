@@ -1,0 +1,44 @@
+.tabs__item {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.tabs__buttons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+    .tabs__btn {
+      font-size: 24px;
+      line-height: 24px;
+      margin-right: 15px;
+      font-family: $font-family_bold;
+      opacity: 0.5;
+      cursor: pointer;
+      border-bottom: 2px dashed transparent;
+      transition: all 0.3s;
+        &:hover {
+          color: $color-red;
+          border-bottom: 2px dashed transparent;
+          opacity: 1;
+        }
+        &:last-child {
+          margin-left: 15px;
+        }
+      &_active {
+        color: $color-red;
+        border-bottom: 2px dashed $color-red;
+        opacity: 1;
+      }
+    }
+    span {
+      font-size: 20px;
+      line-height: 20px;
+      opacity: 0.5;
+    }
+}

@@ -84,6 +84,7 @@
 .link_arrow {
   position: relative;
   transition: all 0.3s;
+  margin-right: 15px;
   &:after {
     position: absolute;
     transition: all 0.3s;

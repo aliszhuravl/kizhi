@@ -6,3 +6,5 @@
 //= parts/_burger.js
 //= parts/_accordion.js
 //= parts/_dropdown.js
+//= parts/_map.js
+//= parts/_tabs.js

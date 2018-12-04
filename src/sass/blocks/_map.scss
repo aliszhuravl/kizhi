@@ -1,0 +1,17 @@
+.map_block {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: auto;
+  margin-bottom: 80px;
+    &__inner {
+      width: 1280px;
+      .map {
+        height: 400px;
+        width: 100%;
+        background-color: $color-gray-5;
+      }
+    }
+}

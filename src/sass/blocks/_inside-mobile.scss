@@ -1,0 +1,15 @@
+@media (max-width: 1200px) {
+  .header_simple .header_top {
+    padding: 40px;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .box_searchform {
+    flex-wrap: wrap;
+      &__item {
+        margin-bottom: 25px;
+      }
+  }
+}
