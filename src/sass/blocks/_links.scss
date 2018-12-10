@@ -104,6 +104,32 @@
     }
 }
 
+.arr_reverse {
+  margin-left: 15px;
+  &:after {
+    transform: rotate(-135deg);
+    right: auto;
+    left: -12px;
+  }
+  &:hover {
+    &:after {
+      left: -17px;
+    }
+  }
+}
+
+.link_down {
+  &:after {
+    transform: rotate(135deg);
+  }
+  &:hover {
+    &:after {
+      top: 10px;
+      right: -12px;
+    }
+  }
+}
+
 .link_classic {
   color: #000;
   text-decoration: none;

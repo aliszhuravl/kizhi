@@ -137,3 +137,34 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.collection_tile {
+  .gallery_tile__item_text .title {
+    margin-bottom: 0;
+  }
+}
+
+.tile_name {
+  margin-bottom: 25px;
+}
+
+.sub_album {
+  margin-top: 50px;
+    .gallery_tile__item {
+        img {
+          display: block;
+        }
+      &:after {
+        display: none;
+      }
+    }
+}
+
+.album_tile {
+  .gallery_tile__item_img img {
+    display: block;
+  }
+  .gallery_tile__item:after {
+    display: none;
+  }
+}

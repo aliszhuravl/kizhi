@@ -8,3 +8,4 @@
 //= parts/_dropdown.js
 //= parts/_map.js
 //= parts/_tabs.js
+//= parts/_fancybox.js
