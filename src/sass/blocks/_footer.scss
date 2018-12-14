@@ -47,6 +47,11 @@
                 .ico_p {
                   opacity: 1;
                 }
+              .ico {
+                svg {
+                  width: 17px;
+                }
+              }
             }
             &:last-child {
               margin-right: 0;
@@ -144,3 +149,32 @@
     }
 }
 
+.social {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+    a {
+      margin-right: 10px;
+      margin-bottom: 10px;
+      img {
+        width: 40px;
+        height: 40px;
+        filter: grayscale(100%);
+        opacity: 0.5;
+        transition: all 0.3s;
+        display: block;
+      }
+      &:hover {
+        img {
+          width: 40px;
+          height: 40px;
+          filter: grayscale(0%);
+          opacity: 1;
+        }
+      }
+    }
+}
+
+.copir {
+  font-family: $font-agopus;
+}

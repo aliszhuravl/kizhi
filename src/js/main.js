@@ -9,3 +9,4 @@
 //= parts/_map.js
 //= parts/_tabs.js
 //= parts/_fancybox.js
+//= parts/_search.js

@@ -78,6 +78,10 @@
   margin-bottom: 10px;
     .ico {
       margin-right: 20px;
+        img {
+           min-width: 17px;
+           min-height: 17px;
+         }
     }
     .ico_p {
       opacity: 0.5;

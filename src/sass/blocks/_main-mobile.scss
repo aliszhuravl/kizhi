@@ -1,4 +1,12 @@
+.logo_mobile {
+  display: none;
+}
+
 @media (max-width: 1200px) {
+  .unesco {
+    max-width: 90%;
+    bottom: 120px;
+  }
   .header_top {
     top: 40px;
   }
@@ -175,5 +183,35 @@
   .block_announce .an_btns {
     right: 20px;
     bottom: 20px;
+  }
+  .search_box {
+    padding: 20px;
+      .search_input {
+        width: -webkit-fill-available;
+        min-width: 180px;
+      }
+    &__inner {
+      .close {
+        min-width: 60px;
+      }
+    }
+  }
+  .header_simple .header_top {
+    padding: 30px 40px;
+  }
+  .logo_mobile {
+    display: block;
+      img {
+        width: 60px;
+      }
+  }
+  .header_top {
+    top: 30px;
+  }
+  .unesco {
+    bottom: 100px;
+    img {
+      width: 100px;
+    }
   }
 }

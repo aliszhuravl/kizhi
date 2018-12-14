@@ -148,3 +148,15 @@
       border-bottom: 1px dashed $color-red;
     }
 }
+
+.hightlight {
+  &:hover {
+    .ico {
+      svg {
+        .st1 {
+          fill: $color-red !important;
+        }
+      }
+    }
+  }
+}
