@@ -56,6 +56,11 @@ h3 {
   color: $color-red;
 }
 
+.h3_simple {
+  margin-bottom: 20px;
+  color: #000;
+}
+
 .bold {
   font-family: $font-family_bold;
   font-weight: normal;
@@ -64,6 +69,10 @@ h3 {
 
 .big {
   font-size: 18px;
+}
+
+.big_20 {
+  font-size: 20px;
 }
 
 .red {
@@ -78,4 +87,8 @@ h3 {
 .main_p {
   color: #181818;
   font-size: 19px;
+}
+
+.transp_05 {
+  opacity: 0.6;
 }

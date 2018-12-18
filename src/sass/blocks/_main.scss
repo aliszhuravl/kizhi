@@ -81,6 +81,7 @@
         img {
            min-width: 17px;
            min-height: 17px;
+          display: block;
          }
     }
     .ico_p {
@@ -114,5 +115,18 @@
       z-index: 2;
       max-width: 1170px;
       margin: 0 auto;
+    }
+}
+
+.gray {
+  width: 100%;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-gray-5;
+  margin-bottom: 80px;
+    section {
+      margin-bottom: 0;
     }
 }

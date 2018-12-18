@@ -92,4 +92,23 @@ $(document).ready(function() {
             $('.ac-slide-number').text(indexSlide);
         });
 
+
+
+    $('.btr_slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        speed: 500,
+        prevArrow: $('#btr_prev'),
+        nextArrow: $('#btr_next')
     });
+
+    $('.btr_slider')
+        .on('beforeChange', function(event, slick, currentSlide, nextSlide){
+            var indexSlide = nextSlide + 1;
+            $('.btr-slide-number').text(indexSlide);
+        });
+
+    });
+

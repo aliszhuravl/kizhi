@@ -1,0 +1,45 @@
+.price_table {
+  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  table {
+    width: 1130px;
+    border: 1px dashed $color-gray;
+    background-color: $color-gray-5;
+    tr {
+      border-bottom: 1px dashed $color-gray;
+      td {
+        padding: 5px 40px;
+        height: 68px;
+        border-right: 1px dashed $color-gray;
+    }
+      .main_td {
+        text-align: center;
+        vertical-align: center;
+      }
+    }
+    .price {
+      text-align: center;
+    }
+    .table_head {
+      td {
+        font-family: $font-family_bold;
+        color: $color-red;
+        font-size: 16px;
+      }
+    }
+    .cat_name {
+      padding-left: 60px;
+    }
+  }
+  &:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      background-image: url('../img/orn2.jpg');
+      background-size: contain;
+      width: 32px;
+      height: 100%;
+   }
+}

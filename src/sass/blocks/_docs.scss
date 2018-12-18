@@ -1,0 +1,27 @@
+.docs_box {
+  width: 100%;
+  border: 1px dashed $color-red;
+  &__item {
+    width: 100%;
+    border-bottom: 1px dashed $color-red;
+      &_inner {
+        padding: 25px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        min-height: 70px;
+          .dbi_img {
+            margin-right: 25px;
+              img {
+                width: 20px;
+              }
+          }
+          .dbi_name {
+            max-width: 90%;
+          }
+      }
+    &:last-child {
+      border-bottom: transparent;
+    }
+  }
+}

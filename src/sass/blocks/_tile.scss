@@ -19,6 +19,19 @@
     cursor: pointer;
     overflow: hidden;
 
+    &_infoimg {
+      height: 50px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+        img {
+          max-height: 100%;
+          margin-bottom: 0 !important;
+        }
+    }
+
     &:after {
       transition: all 0.3s;
       position: absolute;
@@ -86,6 +99,12 @@
     margin-right: 32px;
     background-color: $color-gray-5;
     height: 372px;
+    &_name {
+      margin-bottom: 35px;
+    }
+    &_link {
+      margin-bottom: 20px;
+    }
       &:last-child {
         margin-right: 0;
       }
@@ -167,4 +186,53 @@
   .gallery_tile__item:after {
     display: none;
   }
+}
+
+.info_tile {
+  .tile__item {
+    min-height: auto;
+    padding: 30px;
+    cursor: default;
+      .tile__textbox {
+        padding: 0;
+        text-align: center;
+      }
+    &:hover {
+      &:after {
+        display: none;
+      }
+      border-color: $color-gray;
+      box-shadow: none;
+    }
+  }
+}
+
+.tile_simple {
+  .gallery_tile__item {
+    padding: 40px;
+      .name {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    &:hover {
+      &:after {
+        display: none;
+      }
+      border-color: $color-gray;
+      box-shadow: none;
+    }
+  }
+}
+
+.item_white {
+  background-color: #fff;
+  height: auto;
+  border: 1px dashed $color-red;
+  margin-bottom: 40px;
+    .orn_info {
+      padding: 35px;
+      justify-content: flex-start;
+    }
 }
