@@ -579,3 +579,28 @@
       height: 100%;
     }
 }
+
+.black_ico {
+  margin-bottom: 15px;
+  .ico_p {
+    opacity: 1;
+  }
+}
+
+.block_black {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  .ico_text {
+    margin-bottom: 5px;
+    width: auto;
+    margin-right: 45px;
+  }
+}
+
+.post_text {
+  align-items: center !important;
+}
+
+.text_black {
+  margin-top: 25px;
+}

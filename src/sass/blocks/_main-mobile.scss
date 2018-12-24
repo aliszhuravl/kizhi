@@ -3,6 +3,13 @@
 }
 
 @media (max-width: 1200px) {
+  .box_404 {
+    padding: 20px;
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
   .unesco {
     max-width: 90%;
     bottom: 120px;

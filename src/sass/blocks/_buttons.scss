@@ -131,3 +131,17 @@
   font-size: 18px;
   line-height: 18px;
 }
+
+.btn_gray {
+  background-color: transparent;
+  text-transform: uppercase;
+  border: 1px dashed $color-gray;
+  color: $color-gray-50;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: transparent;
+      border-color: $color-red;
+      color: $color-red;
+    }
+}

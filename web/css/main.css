@@ -587,6 +587,13 @@ h3 {
 	opacity: .6;
 }
 
+.span_name {
+	font-family: 'OfficinaBold', 'Arial', serif;
+	font-size: 18px;
+	display: block;
+	color: #852735;
+}
+
 .header {
 	background-color: #852735;
 }
@@ -1572,6 +1579,21 @@ h3 {
 	background-color: transparent;
 }
 
+.btn_gray {
+	text-transform: uppercase;
+	color: #747880;
+	border: 1px dashed #b8b8b8;
+	background-color: transparent;
+}
+
+.btn_gray:hover,
+.btn_gray:focus,
+.btn_gray:active {
+	color: #852735;
+	border-color: #852735;
+	background-color: transparent;
+}
+
 .form__checkbox {
 	font-size: 13px;
 	position: relative;
@@ -1667,7 +1689,7 @@ h3 {
 }
 
 .progress_bar .pbi {
-	width: 38%;
+	width: 50%;
 	height: 50px;
 	background-color: #852735;
 }
@@ -1817,6 +1839,29 @@ h3 {
 
 .gray section {
 	margin-bottom: 0;
+}
+
+.box_404 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	padding-top: 0;
+	justify-content: center;
+	align-items: center;
+}
+
+.box_404 img {
+	margin-bottom: 70px;
+}
+
+.box_404 p {
+	font-size: 18px;
+	margin-bottom: 40px;
+	text-align: center;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	opacity: .6;
 }
 
 /* Slider */
@@ -3479,6 +3524,33 @@ h3 {
 	height: 100%;
 }
 
+.black_ico {
+	margin-bottom: 15px;
+}
+
+.black_ico .ico_p {
+	opacity: 1;
+}
+
+.block_black {
+	justify-content: flex-start;
+	flex-wrap: wrap;
+}
+
+.block_black .ico_text {
+	width: auto;
+	margin-right: 45px;
+	margin-bottom: 5px;
+}
+
+.post_text {
+	align-items: center !important;
+}
+
+.text_black {
+	margin-top: 25px;
+}
+
 .dropdown {
 	position: relative;
 }
@@ -4517,6 +4589,19 @@ ol li::before {
 	width: auto;
 }
 
+.black_ico_text {
+	max-width: 400px;
+	align-items: flex-start;
+}
+
+.black_ico_text .big {
+	margin-bottom: 0;
+}
+
+.black_ico_text .ico_p {
+	opacity: 1;
+}
+
 .clearfix:before,
 .clearfix:after {
 	display: table;
@@ -4676,6 +4761,15 @@ ol li::before {
 }
 
 @media (max-width: 1200px) {
+
+.box_404 {
+	width: 100%;
+	padding: 20px;
+}
+
+.box_404 img {
+	width: 100%;
+}
 
 .unesco {
 	bottom: 120px;
