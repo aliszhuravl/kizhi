@@ -551,6 +551,10 @@ h3 {
 	color: #000;
 }
 
+.bold_s {
+	font-family: 'OfficinaBold', 'Arial', serif;
+}
+
 .bold {
 	font-family: 'OfficinaBold', 'Arial', serif;
 	font-size: 18px;
@@ -683,12 +687,14 @@ h3 {
 	width: 100%;
 	height: 100%;
 	min-height: 840px;
+	-o-object-fit: cover;
+	object-fit: cover;
 }
 
 .slide_one {
 	background-image: url('../img/s1.jpg');
 	background-repeat: no-repeat;
-	background-size: 120%;
+	background-size: 120% 100%;
 }
 
 .slide_two {
@@ -1411,6 +1417,11 @@ h3 {
 
 .simple_red:hover {
 	border-bottom: 1px dashed #852735;
+}
+
+.no_border:hover {
+	opacity: .5;
+	border-bottom: 1px dashed transparent;
 }
 
 .hightlight:hover .ico svg .st1 {
@@ -2545,6 +2556,31 @@ h3 {
 	justify-content: flex-start;
 }
 
+.links_tile .tile__item:hover {
+	border: 1px dashed #852735;
+	box-shadow: 10px 10px 27px 3px #ebebeb;
+}
+
+.links_tile .tile__item:hover .tile__textbox .tile__title {
+	color: #852735;
+}
+
+.links_tile .tile__item:hover:after {
+	position: absolute;
+	z-index: 2;
+	right: -10px;
+	bottom: -10px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	content: '';
+	transition: all .3s;
+	-webkit-transform: rotate(135deg);
+	transform: rotate(135deg);
+	border: 10px solid transparent;
+	border-bottom: 10px solid #852735;
+}
+
 .menu_box {
 	position: fixed;
 	z-index: 9;
@@ -3399,6 +3435,48 @@ h3 {
 
 .announce_tile {
 	margin-bottom: 0;
+}
+
+.share {
+	display: flex;
+	align-items: center;
+}
+
+.share p {
+	margin-right: 15px;
+}
+
+.share__box {
+	display: flex;
+	align-items: center;
+}
+
+.share__box a img {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	transition: all .3s;
+	opacity: .5;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.share__box a:hover img {
+	opacity: 1;
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
+.map_box {
+	width: 100%;
+	height: 400px;
+	background-color: #f3f3f3;
+}
+
+.map_box .map {
+	width: 100%;
+	height: 100%;
 }
 
 .dropdown {
@@ -4300,6 +4378,145 @@ ol li::before {
 	border-bottom: transparent;
 }
 
+.links_box {
+	width: 100%;
+	max-width: 480px;
+}
+
+.links_box p {
+	margin-bottom: 5px;
+}
+
+.links_box .lb_name {
+	margin-bottom: 15px;
+}
+
+.links_box .block_dashed {
+	padding: 25px;
+}
+
+.bb_place {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.bb_place__container {
+	display: flex;
+	width: 100%;
+	margin-bottom: 50px;
+	justify-content: space-between;
+}
+
+.bb_place__container_left {
+	width: 50%;
+	padding-right: 50px;
+}
+
+.bb_place__container_left_text {
+	width: 100%;
+}
+
+.bb_place__container_left_text .ico_text {
+	margin-bottom: 8px;
+	align-items: flex-start;
+}
+
+.bb_place__container_left_text .ico_text .ico_p {
+	font-size: 16px;
+	opacity: 1;
+}
+
+.bb_place__container_left_text .ico_text .ico_p .p_box {
+	margin-bottom: 12px;
+}
+
+.bb_place__container_left_text .ico_text .ico_p .p_box p {
+	line-height: 24px;
+	margin-bottom: 0;
+}
+
+.bb_place__container_left_text .ico_text .ico_p p {
+	line-height: 22px;
+	margin-bottom: 12px;
+}
+
+.bb_place__container_left_text .ico_text .ico {
+	width: 15px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.bb_place__container_right {
+	width: 50%;
+}
+
+.bb_place__container_right img {
+	width: 100%;
+}
+
+.bb_place__map {
+	height: 300px;
+	margin-bottom: 50px;
+}
+
+.bb_place__map .map_box {
+	height: 300px;
+}
+
+.bb_place__map .map_box .map {
+	height: 300px;
+}
+
+.bb_place__contacts {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.bb_place__contacts .ico_text {
+	width: auto;
+}
+
+.bb_place__contacts_item {
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+
+.table_header {
+	width: 100%;
+	margin-bottom: 25px;
+}
+
+.table_header .table_name {
+	font-family: 'OfficinaBold', 'Arial', serif;
+	font-size: 24px;
+}
+
+.page_price .price_table {
+	margin-bottom: 0;
+}
+
+.page_price .table_duo {
+	display: flex;
+	width: 100%;
+}
+
+.page_price .table_duo .price_table {
+	width: 50%;
+	margin-right: 50px;
+}
+
+.page_price .table_duo .price_table:last-child {
+	margin-right: 0;
+}
+
+.page_price .table_duo .price_table table {
+	width: auto;
+}
+
 .clearfix:before,
 .clearfix:after {
 	display: table;
@@ -4798,6 +5015,21 @@ h1 {
 .element_container .image {
 	width: 100%;
 	margin-bottom: 30px;
+}
+
+.bb_place__container {
+	flex-direction: column;
+	width: 100%;
+}
+
+.bb_place__container_left {
+	width: 100%;
+	margin-bottom: 40px;
+	padding: 0;
+}
+
+.bb_place__container_right {
+	width: 100%;
 }
 
 }

@@ -1,0 +1,28 @@
+.table_header {
+  width: 100%;
+  margin-bottom: 25px;
+    .table_name {
+      font-size: 24px;
+      font-family: $font-family_bold;
+    }
+}
+
+.page_price {
+  .price_table {
+    margin-bottom: 0;
+  }
+  .table_duo {
+    display: flex;
+    width: 100%;
+      .price_table {
+        width: 50%;
+        margin-right: 50px;
+          &:last-child {
+            margin-right: 0;
+          }
+          table {
+            width: auto;
+          }
+      }
+  }
+}
