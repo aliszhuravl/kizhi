@@ -2626,6 +2626,10 @@ h3 {
 	border-bottom: 10px solid #852735;
 }
 
+.no_bottom {
+	margin-bottom: 0 !important;
+}
+
 .menu_box {
 	position: fixed;
 	z-index: 9;
@@ -2786,6 +2790,37 @@ h3 {
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: 14px 14px;
+}
+
+.btn_menu {
+	position: fixed;
+	z-index: 8;
+	top: 60px;
+	right: 0;
+	display: flex;
+	visibility: hidden;
+	height: 60px;
+	transition: all .3s;
+	-webkit-transform: translateX(100%);
+	transform: translateX(100%);
+	background-color: #fff;
+	box-shadow: -3px 4px 20px 5px rgba(0, 0, 0, .05);
+	align-items: center;
+	justify-content: center;
+}
+
+.btn_menu__inner {
+	padding: 15px;
+}
+
+.btn_menu__inner p .transp {
+	color: #852735;
+}
+
+.btn_show {
+	visibility: visible;
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
 }
 
 .accordion {
@@ -4600,6 +4635,14 @@ ol li::before {
 
 .black_ico_text .ico_p {
 	opacity: 1;
+}
+
+.links_p {
+	margin-bottom: 20px !important;
+}
+
+.links_p a {
+	margin-right: 5px;
 }
 
 .clearfix:before,

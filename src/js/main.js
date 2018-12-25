@@ -10,3 +10,4 @@
 //= parts/_tabs.js
 //= parts/_fancybox.js
 //= parts/_search.js
+//= parts/_scroll.js

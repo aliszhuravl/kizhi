@@ -206,6 +206,20 @@ $(document).ready(function() {
     });
 
 });
+
+$(document).ready(function() {
+
+    $('#burger-sub').on('click', function () {
+        $('body').addClass('menu_opened');
+        $('.menu_box').addClass('active_box');
+    });
+
+    $('.close').on('click', function () {
+        $('body').removeClass('menu_opened');
+        $('.menu_box').removeClass('active_box');
+    });
+
+});
 $(document).ready(function() {
     var Accordion = function(el, multiple) {
         this.el = el || {};
@@ -432,4 +446,13 @@ $(document).ready(function() {
         $('.search_box').removeClass('active_search');
     });
 
+});
+
+$( window ).scroll(function() {
+    if ( $(window).scrollTop() > 200) {
+        $(".btn_menu").addClass("btn_show");
+    }
+    if ( $(window).scrollTop() < 200) {
+        $(".btn_menu").removeClass("btn_show");
+    }
 });
