@@ -269,3 +269,23 @@
 .no_bottom {
   margin-bottom: 0 !important;
 }
+
+.sort_block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 4;
+  padding: 5px 15px;
+  background-color: #fff;
+    p {
+      color: #fff;
+    }
+}
+
+.sb_green {
+  background-color: #77b97e;
+}
+
+.sb_red {
+  background-color: #e2907a;
+}

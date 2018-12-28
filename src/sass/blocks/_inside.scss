@@ -178,7 +178,8 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
-  align-items: inherit;
+  //align-items: inherit;
+  align-items: stretch;
     &__item {
       width: calc(33.333% - 22px);
       margin-right: 32px;
